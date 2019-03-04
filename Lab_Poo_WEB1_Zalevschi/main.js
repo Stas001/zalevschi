@@ -42,22 +42,38 @@ if(worker.getSalary() > worker1.getSalary()){
 //==============================================================Insarcin 4
 
 class Worker {
-	
-		getNume(){
+	constructor(nume){
 		this.nume = nume;
+		this.surname = surname;
+		this.hourRate = hourRate;
+		this.hours = hours;
+	}
+		getNume(){
+		return this.nume;
 		}
-		
-	// 	this.surname = surname;
-	// 	this.hourRate = hourRate;
-	// 	this.hours = hours;
+		getSurname(){
+		return this.surname;
+		}
+
+		getHourRate(){
+		return this.hourRate;
+		}
+		getHours(){
+		return this.hours;
+		}
+	
 	
 	
 
-	// getSalary() {
-	// 	return this.hourRate*this.hours;
-	// }
+	getSalary() {
+		return this.hourRate*this.hours;
+	}
 	
 }
 
-let worker = new Worker('Ion'/*, 'Creangă', 10, 176*/);
+let worker = new Worker('Ion', 'Creangă', 10, 176);
 console.log(worker.getNume()); //afișează 'Ion' 
+console.log(worker1.getSurname()); //afișează 'Creangă' 
+console.log(worker1.getHourRate()); //afișează 10 
+console.log(worker1.getHours()); //afișează 31 
+console.log(worker1.getSalary()); 
