@@ -1,5 +1,5 @@
 //==============================================================Insarcin 1
-class Worker {
+/*class Worker {
 	constructor(nume, surname, hourRate, hours){
 		this.nume = nume;
 		this.surname = surname;
@@ -12,15 +12,7 @@ class Worker {
 		return this.hourRate*this.hours;
 	}
 }
-// var Worker = function(name, surname, hourRate, hours){
-// 	this.name = name;
-// 	this.surname = surname;
-// 	this.hourRate = hourRate;
-// 	this.hours = hours;
-// };
-// Worker.prototype.getSalary = function(){
-// 	return this.hourRate*this.hours;
-// }
+
 let worker = new Worker('Ion', 'Creangă', 10, 176);
 console.log(worker.nume); //afișează 'Ion' 
 console.log(worker.surname); //afișează 'Creangă' 
@@ -46,3 +38,26 @@ if(worker.getSalary() > worker1.getSalary()){
 }	else {
 	console.log("Ele doi  sre salariu egual");
 }
+*/
+//==============================================================Insarcin 4
+
+class Worker {
+	
+		getNume(){
+		this.nume = nume;
+		}
+		
+	// 	this.surname = surname;
+	// 	this.hourRate = hourRate;
+	// 	this.hours = hours;
+	
+	
+
+	// getSalary() {
+	// 	return this.hourRate*this.hours;
+	// }
+	
+}
+
+let worker = new Worker('Ion'/*, 'Creangă', 10, 176*/);
+console.log(worker.getNume()); //afișează 'Ion' 
